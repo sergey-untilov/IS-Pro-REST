@@ -7,6 +7,8 @@ import javax.persistence.*;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlType;
 
 import static ua.in.d6.domen.root.UserRole.USER;
 
@@ -14,6 +16,7 @@ import static ua.in.d6.domen.root.UserRole.USER;
 @Getter
 @Setter
 @Table(name = "\"USER\"")
+@XmlType(namespace = "http://www.d6.in.ua/user", name="user")
 public class CustomUser {
 
     private static final long serialVersionUID = 1L;
@@ -21,15 +24,19 @@ public class CustomUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "USER_RCD", nullable = false, updatable = false)
+    @XmlAttribute
     private long id;
 
     @Column(name = "User_Nm")
+    @XmlAttribute
     private String login;
 
     @Column(name = "User_FIO")
+    @XmlAttribute
     private String name;
 
     @Column(name = "User_Phn")
+    @XmlAttribute
     private String phone;
 
     @OneToOne(cascade = CascadeType.MERGE)

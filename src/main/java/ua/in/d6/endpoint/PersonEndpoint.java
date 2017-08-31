@@ -6,8 +6,8 @@ import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
-import ua.in.d6.GetPersonRequest;
-import ua.in.d6.GetPersonResponse;
+import ua.in.d6.request.GetPersonRequest;
+import ua.in.d6.request.GetPersonResponse;
 import ua.in.d6.service.PersonService;
 
 @Endpoint
@@ -25,7 +25,7 @@ public class PersonEndpoint {
     @ResponsePayload
     public GetPersonResponse getPerson(@RequestPayload GetPersonRequest request) {
         GetPersonResponse response = new GetPersonResponse();
-        response.setPerson(PersonRepository.findPerson(request.getName()));
+        response.setPerson(personService.findByName(request.getName()));
 
         return response;
     }
