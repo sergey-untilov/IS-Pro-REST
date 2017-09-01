@@ -24,6 +24,7 @@ public class PersonServiceImpl implements PersonService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public Person findById(Long id) {
         return personRepository.findById(id);
     }
