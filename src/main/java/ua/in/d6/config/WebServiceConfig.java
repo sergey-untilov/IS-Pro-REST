@@ -23,33 +23,18 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         return new ServletRegistrationBean(servlet, "/ws/*");
     }
 
-    @Bean(name = "person")
-    public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema personSchema) {
+    @Bean(name = "ispro")
+    public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema isproSchema) {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
-        wsdl11Definition.setPortTypeName("PersonPort");
+        wsdl11Definition.setPortTypeName("isproPort");
         wsdl11Definition.setLocationUri("/ws");
         wsdl11Definition.setTargetNamespace("http://d6.in.ua");
-        wsdl11Definition.setSchema(personSchema);
+        wsdl11Definition.setSchema(isproSchema);
         return wsdl11Definition;
     }
 
     @Bean
-    public XsdSchema personSchema() {
-        return new SimpleXsdSchema(new ClassPathResource("person.xsd"));
+    public XsdSchema isproSchema() {
+        return new SimpleXsdSchema(new ClassPathResource("schema.xsd"));
     }
-
-//    @Bean(name = "company")
-//    public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema companySchema) {
-//        DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
-//        wsdl11Definition.setPortTypeName("CompanyPort");
-//        wsdl11Definition.setLocationUri("/ws");
-//        wsdl11Definition.setTargetNamespace("http://d6.in.ua");
-//        wsdl11Definition.setSchema(companySchema);
-//        return wsdl11Definition;
-//    }
-//
-//    @Bean
-//    public XsdSchema companySchema() {
-//        return new SimpleXsdSchema(new ClassPathResource("company.xsd"));
-//    }
 }

@@ -6,8 +6,8 @@ import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
-import ua.in.d6.request.GetPersonRequest;
-import ua.in.d6.request.GetPersonResponse;
+import ua.in.d6.schema.GetPersonRequest;
+import ua.in.d6.schema.GetPersonResponse;
 import ua.in.d6.service.PersonService;
 
 @Endpoint

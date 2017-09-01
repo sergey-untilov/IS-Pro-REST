@@ -4,14 +4,14 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 @Entity
 @Getter
 @Setter
 @Table(name = "KpuC1")
-@XmlType(name="person", namespace = "http://www.d6.in.ua/person")
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name="person", namespace = "http://www.d6.in.ua/schema")
 public class Person {
 
     private static final long serialVersionUID = 1L;
@@ -19,10 +19,10 @@ public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Kpu_Rcd", nullable = false, updatable = false)
-    @XmlAttribute
+    @XmlElement(required = true)
     private long id;
 
     @Column(name = "Kpu_Fio", nullable = false)
-    @XmlAttribute
+    @XmlElement(required = true)
     private String name;
 }
