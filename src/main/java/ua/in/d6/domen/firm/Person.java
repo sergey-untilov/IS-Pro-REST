@@ -16,15 +16,11 @@ import javax.xml.bind.annotation.*;
 @XmlType(name="person", namespace = "http://d6.in.ua")
 public class Person {
 
-    private static final long serialVersionUID = 1L;
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Kpu_Rcd", nullable = false, updatable = false)
-    @XmlElement(required = true)
     private long id;
 
     @Column(name = "Kpu_Fio", nullable = false)
-    @XmlElement(required = true)
     private String name;
 }

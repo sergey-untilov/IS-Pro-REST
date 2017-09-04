@@ -25,7 +25,10 @@ public class PersonEndpoint {
     @ResponsePayload
     public GetPersonResponse getPerson(@RequestPayload GetPersonRequest request) {
         GetPersonResponse response = new GetPersonResponse();
-        response.setPerson(personService.findByName(request.getName()));
+        if (request.getId() > 0)
+            response.setPerson(personService.findById(request.getId()));
+        else
+            response.setPerson(personService.findByName(request.getName()));
 
         return response;
     }

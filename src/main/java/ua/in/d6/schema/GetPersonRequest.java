@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.*;
 @Getter
 @Setter
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getPersonRequest", propOrder = {"name"}, namespace = "http://d6.in.ua")
+@XmlType(name = "", propOrder = {"id", "name"})
+@XmlRootElement(name = "getPersonRequest", namespace = "http://d6.in.ua")
 public class GetPersonRequest {
-
-    @XmlElement(required = true)
+    long id;
     protected String name;
 }
