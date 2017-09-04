@@ -51,7 +51,7 @@ public class JpaRootConfig {
     public LocalContainerEntityManagerFactoryBean rootEntityManagerFactory() {
         LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactoryBean.setDataSource(rootDataSource());
-        entityManagerFactoryBean.setPackagesToScan("ua.in.d6.entity.root");
+        entityManagerFactoryBean.setPackagesToScan("ua.in.d6.domen.root");
         entityManagerFactoryBean.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 
         Properties jpaProperties = new Properties();

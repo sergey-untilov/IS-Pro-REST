@@ -1,6 +1,7 @@
 package ua.in.d6.domen.firm;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -10,6 +11,7 @@ import javax.xml.bind.annotation.XmlType;
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
 @Table(name = "CrtFrm1")
 @XmlType(name="company", namespace = "http://d6.in.ua")
 public class Company {

@@ -1,6 +1,7 @@
 package ua.in.d6.domen.root;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -15,6 +16,7 @@ import static ua.in.d6.domen.root.UserRole.USER;
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
 @Table(name = "\"USER\"")
 @XmlType(namespace = "http://d6.in.ua", name="user")
 public class CustomUser {
@@ -42,8 +44,6 @@ public class CustomUser {
     @OneToOne(cascade = CascadeType.MERGE)
     @PrimaryKeyJoinColumn
     private UserPassword userPassword;
-
-    public CustomUser() {}
 
     public UserRole getRole() {
         return USER;

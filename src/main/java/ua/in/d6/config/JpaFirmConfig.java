@@ -47,7 +47,7 @@ public class JpaFirmConfig {
     public LocalContainerEntityManagerFactoryBean firmEntityManagerFactory() {
         LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactoryBean.setDataSource(firmDataSource());
-        entityManagerFactoryBean.setPackagesToScan("ua.in.d6.entity.firm");
+        entityManagerFactoryBean.setPackagesToScan("ua.in.d6.domen.firm");
         entityManagerFactoryBean.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 
         Properties jpaProperties = new Properties();
