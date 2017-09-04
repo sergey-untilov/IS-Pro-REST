@@ -23,4 +23,12 @@ public class Person {
 
     @Column(name = "Kpu_Fio", nullable = false)
     private String name;
+
+    @Column(name = "Kpu_CdNlp", nullable = false)
+    private String taxNumber;
+
+    @Column(name = "Kpu_CdPol")
+    private Sex sex;
+
+
 }

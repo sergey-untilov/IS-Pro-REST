@@ -22,6 +22,8 @@
     <xs:sequence>
       <xs:element name="id" type="xs:long"/>
       <xs:element minOccurs="0" name="name" type="xs:string"/>
+      <xs:element minOccurs="0" name="taxNumber" type="xs:string"/>
+      <xs:element minOccurs="0" name="sex" type="main:sex"/>
     </xs:sequence>
   </xs:complexType>
 
@@ -40,4 +42,12 @@
     <xs:attribute name="name" type="xs:string"/>
     <xs:attribute name="phone" type="xs:string"/>
   </xs:complexType>
+
+  <xs:simpleType name="sex">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MALE"/>
+      <xs:enumeration value="FEMALE"/>
+      <xs:enumeration value="UNDEFINED"/>
+    </xs:restriction>
+  </xs:simpleType>
 </xs:schema>
