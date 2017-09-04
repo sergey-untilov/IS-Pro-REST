@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.*;
 @Setter
 @Table(name = "KpuC1")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name="person", namespace = "http://www.d6.in.ua/schema")
+@XmlType(name="person", namespace = "http://d6.in.ua")
 public class Person {
 
     private static final long serialVersionUID = 1L;

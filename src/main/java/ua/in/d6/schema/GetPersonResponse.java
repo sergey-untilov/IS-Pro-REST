@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.*;
 @Getter
 @Setter
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getPersonResponse", propOrder = {"person"}, namespace = "http://www.d6.in.ua/schema")
+@XmlType(name = "getPersonResponse", propOrder = {"person"}, namespace = "http://d6.in.ua")
 public class GetPersonResponse {
 
     @XmlElement(required = true)

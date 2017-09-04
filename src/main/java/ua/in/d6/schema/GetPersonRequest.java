@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.*;
 @Getter
 @Setter
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getPersonRequest", propOrder = {"name"}, namespace = "http://www.d6.in.ua/schema")
+@XmlType(name = "getPersonRequest", propOrder = {"name"}, namespace = "http://d6.in.ua")
 public class GetPersonRequest {
 
     @XmlElement(required = true)

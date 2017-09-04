@@ -3,7 +3,7 @@ package ua.in.d6.domen.root;
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlType;
 
-@XmlType(namespace = "http://www.d6.in.ua/schema", name="userRole")
+@XmlType(namespace = "http://d6.in.ua", name="userRole")
 @XmlEnum
 public enum UserRole {
     ADMIN, USER;

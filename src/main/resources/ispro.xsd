@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:main="http://www.d6.in.ua/schema" targetNamespace="http://www.d6.in.ua/schema" version="1.0">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:main="http://d6.in.ua" targetNamespace="http://d6.in.ua" version="1.0">
 
   <xs:complexType name="getPersonRequest">
     <xs:sequence>

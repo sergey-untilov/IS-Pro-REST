@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlType;
 @Getter
 @Setter
 @Table(name = "CrtFrm1")
-@XmlType(name="company", namespace = "http://www.d6.in.ua/schema")
+@XmlType(name="company", namespace = "http://d6.in.ua")
 public class Company {
 
     private static final long serialVersionUID = 1L;

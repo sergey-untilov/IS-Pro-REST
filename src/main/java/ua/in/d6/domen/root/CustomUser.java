@@ -16,7 +16,7 @@ import static ua.in.d6.domen.root.UserRole.USER;
 @Getter
 @Setter
 @Table(name = "\"USER\"")
-@XmlType(namespace = "http://www.d6.in.ua/schema", name="user")
+@XmlType(namespace = "http://d6.in.ua", name="user")
 public class CustomUser {
 
     private static final long serialVersionUID = 1L;

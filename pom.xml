@@ -44,6 +44,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.3.156</version>
+		</dependency>
+
+		<dependency>
 			<groupId>com.microsoft.sqlserver</groupId>
 			<artifactId>mssql-jdbc</artifactId>
 			<scope>runtime</scope>
@@ -96,9 +102,9 @@
 
 							<transformSchemas>
 								<transformSchema>
-									<uri>http://www.d6.in.ua/schema</uri>
+									<uri>http://d6.in.ua</uri>
 									<toPrefix>main</toPrefix>
-									<toFile>${project.basedir}/src/main/resources/schema.xsd</toFile>
+									<toFile>${project.basedir}/src/main/resources/ispro.xsd</toFile>
 								</transformSchema>
 							</transformSchemas>
 
