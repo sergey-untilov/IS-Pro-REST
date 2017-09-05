@@ -6,6 +6,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;
+import java.util.Date;
 
 @Entity
 @Getter
@@ -24,11 +25,20 @@ public class Person {
     @Column(name = "Kpu_Fio", nullable = false)
     private String name;
 
-    @Column(name = "Kpu_CdNlp", nullable = false)
+    @Column(name = "Kpu_CdNlp")
     private String taxNumber;
+
+    @Column(name = "Kpu_DtRoj")
+    private Date birthDate;
 
     @Column(name = "Kpu_CdPol")
     private Sex sex;
 
+    @OneToOne(cascade = CascadeType.MERGE)
+    @PrimaryKeyJoinColumn
+    SalaryAccount salaryAccount;
 
+    @OneToOne(cascade = CascadeType.MERGE)
+    @PrimaryKeyJoinColumn
+    PersonnelAccount personnelAccount;
 }

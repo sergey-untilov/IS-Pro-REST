@@ -18,12 +18,32 @@
     </xs:complexType>
   </xs:element>
 
+  <xs:complexType name="salaryAccount">
+    <xs:sequence>
+      <xs:element name="id" type="xs:long"/>
+      <xs:element name="tabNumber" type="xs:long"/>
+      <xs:element minOccurs="0" name="corpNumber" type="xs:string"/>
+      <xs:element minOccurs="0" name="recalcStart" type="xs:dateTime"/>
+      <xs:element name="sequenceNumber" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+
   <xs:complexType name="person">
     <xs:sequence>
       <xs:element name="id" type="xs:long"/>
       <xs:element minOccurs="0" name="name" type="xs:string"/>
       <xs:element minOccurs="0" name="taxNumber" type="xs:string"/>
+      <xs:element minOccurs="0" name="birthDate" type="xs:dateTime"/>
       <xs:element minOccurs="0" name="sex" type="main:sex"/>
+      <xs:element minOccurs="0" name="salaryAccount" type="main:salaryAccount"/>
+      <xs:element minOccurs="0" name="personnelAccount" type="main:personnelAccount"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="personnelAccount">
+    <xs:sequence>
+      <xs:element name="id" type="xs:long"/>
+      <xs:element name="cardNumber" type="xs:long"/>
     </xs:sequence>
   </xs:complexType>
 
@@ -46,8 +66,8 @@
   <xs:simpleType name="sex">
     <xs:restriction base="xs:string">
       <xs:enumeration value="MALE"/>
-      <xs:enumeration value="FEMALE"/>
       <xs:enumeration value="UNDEFINED"/>
+      <xs:enumeration value="FEMALE"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>
