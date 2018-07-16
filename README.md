@@ -1,7 +1,7 @@
 IS-Pro-REST
 ===========
 
-REST-service for IS-Pro db.
+REST-service for IS-Pro DB.
 
 Notes:
 Compiler -> Annotation Processors is set for "Enable annotation processing"
