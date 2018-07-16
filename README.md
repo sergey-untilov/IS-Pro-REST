@@ -1,5 +1,7 @@
-# d6
-demo6 is the web service for ispro db.
+IS-Pro-REST
+===========
+
+REST-service for IS-Pro db.
 
 Notes:
 Compiler -> Annotation Processors is set for "Enable annotation processing"
