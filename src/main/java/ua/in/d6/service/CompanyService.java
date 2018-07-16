@@ -1,6 +1,6 @@
 package ua.in.d6.service;
 
-import ua.in.d6.domen.firm.Company;
+import ua.in.d6.domain.firm.Company;
 
 public interface CompanyService {
     Company findById(Long id);

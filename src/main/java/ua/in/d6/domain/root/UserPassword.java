@@ -1,4 +1,4 @@
-package ua.in.d6.domen.root;
+package ua.in.d6.domain.root;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package ua.in.d6.domen.root;
+package ua.in.d6.domain.root;
 
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlType;

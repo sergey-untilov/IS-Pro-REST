@@ -1,6 +1,6 @@
 package ua.in.d6.service;
 
-import ua.in.d6.domen.root.CustomUser;
+import ua.in.d6.domain.root.CustomUser;
 import ua.in.d6.repository.root.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

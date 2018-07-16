@@ -1,4 +1,4 @@
-package ua.in.d6.domen.root;
+package ua.in.d6.domain.root;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,7 +10,7 @@ import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 
-import static ua.in.d6.domen.root.UserRole.USER;
+import static ua.in.d6.domain.root.UserRole.USER;
 
 @Entity
 @Getter

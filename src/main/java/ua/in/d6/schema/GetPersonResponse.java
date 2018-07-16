@@ -2,7 +2,7 @@ package ua.in.d6.schema;
 
 import lombok.Getter;
 import lombok.Setter;
-import ua.in.d6.domen.firm.Person;
+import ua.in.d6.domain.firm.Person;
 
 import javax.xml.bind.annotation.*;
 

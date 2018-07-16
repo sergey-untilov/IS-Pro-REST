@@ -1,4 +1,4 @@
-package ua.in.d6.domen.firm;
+package ua.in.d6.domain.firm;
 
 import lombok.Getter;
 import lombok.Setter;

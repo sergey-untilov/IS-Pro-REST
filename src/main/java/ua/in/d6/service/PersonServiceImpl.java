@@ -1,10 +1,9 @@
 package ua.in.d6.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ua.in.d6.domen.firm.Person;
+import ua.in.d6.domain.firm.Person;
 import ua.in.d6.repository.firm.PersonRepository;
 
 @Service

@@ -10,13 +10,12 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Component;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import ua.in.d6.domen.root.CustomUser;
+import ua.in.d6.domain.root.CustomUser;
 import ua.in.d6.helper.Byte2String;
 import ua.in.d6.service.UserService;
 import ua.in.d6.stay.Md5HashEncoder;
